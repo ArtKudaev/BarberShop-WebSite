@@ -33,6 +33,7 @@ body {
     font-weight: 700;
     line-height: 1;
     font-family: 'PT Sans Narrow', sans-serif;
+    background-image: url(images/background.png);
 }
 .container {
     max-width: 940px;
@@ -86,7 +87,7 @@ body {
 /*--------------------------MAIN-------------------------*/
 /*------------AFISHA--------------*/
 .main {
-    background-image: url(images/background.png);
+    
 }
 .afisha {
     display: flex;
@@ -300,8 +301,6 @@ body {
     width: 43px;
     height: 43px;
     background: #000000;
-    text-align: center;
-    justify-content: center;
 }
 .developer-info {
     margin: 59px 0 55px 0;
