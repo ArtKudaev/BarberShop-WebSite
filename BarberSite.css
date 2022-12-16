@@ -34,6 +34,7 @@ body {
     line-height: 1;
     font-family: 'PT Sans Narrow', sans-serif;
     background-image: url(images/background.png);
+    background-position: top center;
 }
 .container {
     max-width: 940px;
@@ -55,11 +56,10 @@ body {
     display: flex;
     min-height: 72px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     font-size: 16px;
 }
 .menu {
-    margin-right: 333px;
     
 }
 .menu-list {
@@ -76,12 +76,12 @@ body {
     color: #FFFFFF;
 }
 .login-block {
-
-}
-.login-pic {
-    margin-right: 12px;
+    display: block;
+    display: flex;
+    gap: 12px;
 }
 .enter {
+    display: block;
     color: #FFFFFF;
 }
 /*--------------------------MAIN-------------------------*/
@@ -132,7 +132,7 @@ body {
 .news-photo {
     margin: 70px auto 0;
     display: flex;
-    background: #F9F6F3;
+    background-image: url(images/blocks-background.png);
 }
 .news-block {
     width: 342px;
@@ -145,20 +145,24 @@ body {
     margin-bottom: 19px;
 }
 .last-news {
+    display: block;
     width: 320px;
     height: 48px;
     line-height: 24px;
+    color: #000000;
 }
 .previous-news {
+    display: block;
     width: 343px;
     height: 72px;
     line-height: 24px;
+    color: #000000;
 }
 .time {
     display: block;
     margin-bottom: 23px;
 }
-.black-buttons {
+.buttons {
     width: 140px;
     height: 44px;
     line-height: 24px;
@@ -184,7 +188,8 @@ body {
     margin-bottom: 26px;
 }
 .gallery-pic {
-    margin: 0 7px 48px;
+    margin: 0 0 48px 0;
+    border: 7px solid #FFFFFF;
 }
 .paired-buttons {
     display: flex;
@@ -194,7 +199,7 @@ body {
 .contacts-signup {
     display: flex;
     margin: 36px auto 65px;
-    background: #F9F6F3;
+    background-image: url(images/blocks-background.png);
 }
 .contacts-block {
     width: 321px;
@@ -212,6 +217,19 @@ body {
     height: 72px;
     line-height: 24px;
     margin-bottom: 22px;
+}
+.feedback {
+    display: block;
+    width: 140px;
+    height: 44px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: #000000;
+    border: 0;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .second-separator {
     width: 2px;
@@ -284,6 +302,10 @@ body {
     line-height: 24px;
     margin: 59px 27px 38px 0;
 }
+.how-to-find-us {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
 .friendship {
     margin: 59px 259px 55px 27px;
 }
@@ -301,6 +323,9 @@ body {
     width: 43px;
     height: 43px;
     background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .developer-info {
     margin: 59px 0 55px 0;
@@ -311,10 +336,14 @@ body {
     text-align: center;
 }
 .developer-link {
+    display: block;
     width: 140px;
     height: 43px;
     line-height: 24px;
     color: #FFFFFF;
     background: #000000;
     border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
