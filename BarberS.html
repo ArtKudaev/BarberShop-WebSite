@@ -90,21 +90,24 @@
                 <p class="headlines">ЗАПИСАТЬСЯ</p>
                 <p class="signup-info">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
                 <div class="input-sectors">
-                    <p class="input-data-headline">ДАТА</p>
-                    <p class="input-time-headline">ВРЕМЯ</p>
+                    <div class="input-block">
+                        <label class="input-headline">ДАТА</label>
+                        <input type="text" class="inputs" placeholder="08.10.2017">
+                    </div>
+                    <div class="input-block">
+                        <label class="input-headline">ВРЕМЯ</label>
+                        <input type="text" class="inputs" placeholder="10:00">
+                    </div>
                 </div>
                 <div class="input-sectors">
-                    <!---- <label>ДАТА<input type="text"></label> -->
-                    <input type="text" class="inputs" placeholder="08.10.2017">
-                    <input type="text" class="inputs" placeholder="10:00">
-                </div>
-                <div class="input-sectors">
-                    <p class="input-name-headline">ВАШЕ ИМЯ</p>
-                    <p class="input-phone-headline">ТЕЛЕФОН</p>
-                </div>
-                <div class="input-sectors">
-                    <input type="text" class="inputs" placeholder="Борода">
-                    <input type="text" class="inputs" placeholder="+7 123 456-78-90">
+                    <div class="input-block">
+                        <label class="input-headline">ВАШЕ ИМЯ</label>
+                        <input type="text" class="inputs" placeholder="Борода">
+                    </div>
+                    <div class="input-block">
+                        <label class="input-headline">ТЕЛЕФОН</label>
+                        <input type="text" class="inputs" placeholder="+7 123 456-78-90">
+                    </div>
                 </div>
                 <button class="send-info-button">ОТПРАВИТЬ</button>
             </div>
