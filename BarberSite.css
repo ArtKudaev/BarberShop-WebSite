@@ -36,14 +36,20 @@ body {
     background-image: url(images/background.png);
     background-position: top center;
 }
+.goods-page-body {
+    height: 100%;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    font-family: 'PT Sans Narrow', sans-serif;
+    background-image: url(images/goods-page-bck.png);
+    background-position: top center;
+}
 .container {
     max-width: 940px;
     margin: 0 auto;
     padding: 0 10px;
     box-sizing: content-box;
-}
-.text-blocks {
-
 }
 /*----------------------ШАПКА----------------------*/
 .header {
@@ -59,17 +65,23 @@ body {
     justify-content: space-between;
     font-size: 16px;
 }
-.menu {
-    
-}
 .menu-list {
     display: flex;
 }
-.menu-item {
-    
+.goods-menu-list {
+    display: flex;
+    margin-left: 20px;
 }
 .menu-item:not(:last-child) {
     margin: 0px 40px 0px 0px;
+}
+.chosen-menu-item {
+    position: absolute;
+    width: 56px;
+    height: 4px;
+    left: 705px;
+    top: 68px;
+    background: #FFFFFF;
 }
 .menu-link {
     line-height: calc(20 / 16 * 100%);
@@ -80,15 +92,18 @@ body {
     display: flex;
     gap: 12px;
 }
+.goods-login-block {
+    display: block;
+    display: flex;
+    gap: 12px;
+    margin-right: 30px;
+}
 .enter {
     display: block;
     color: #FFFFFF;
 }
 /*--------------------------MAIN-------------------------*/
 /*------------AFISHA--------------*/
-.main {
-    
-}
 .afisha {
     display: flex;
     flex-direction: column;
@@ -127,6 +142,78 @@ body {
     line-height: 24px;
     width: 300px;
     height: 72px;
+}
+/*------------------PRODUCT CATEGORY------------------*/
+.product-category {
+    width: 294px;
+    height: 77px;
+    margin-top: 51px;
+}
+.name-of-category {
+    font-size: 30px;
+    line-height: 42px;
+}
+.site-navigation {
+    display: flex;
+    gap: 15px;
+    max-height: 20px;
+}
+.site-navigation-sections {
+    display: block;
+}
+.site-navigation-sections:last-child {
+    color: #ABA9A7;
+}
+.black-rhombus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*----------------CATALOG------------------*/
+.catalog {
+    display: flex;
+    gap: 73px;
+    margin-top: 49px;
+}
+.filters {
+    width: 167px;
+    height: 574px;
+}
+.products {
+    display: grid;
+    grid-template-columns: 220px 220px 220px;
+    grid-template-rows: 286px 286px 286px;
+    gap: 20px;
+}
+.product-card {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+.manufacturers {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 27px;
+}
+.brands-checkbox-block {
+    display: flex;
+    gap: 23px;
+    align-items: center;
+    margin-bottom: 21px;
+}
+.manufacturers-brands {
+    line-height: 18px;
+}
+.brands-checkbox {
+    width: 20px;
+    height: 20px;
+    background: #F9F6F3;
+    border: 2px solid #000101;
+}
+.product-groups {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 29px;
+    margin-bottom: 27px;
 }
 /*----------------------NEWS & PHOTO------------------*/
 .news-photo {
