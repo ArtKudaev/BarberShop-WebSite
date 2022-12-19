@@ -181,8 +181,8 @@ body {
 }
 .products {
     display: grid;
-    grid-template-columns: 220px 220px 220px;
-    grid-template-rows: 286px 286px 286px;
+    grid-template-columns: repeat(3, 220px);
+    grid-template-rows: 286px 286px;
     gap: 20px;
 }
 .product-card {
@@ -209,11 +209,27 @@ body {
     background: #F9F6F3;
     border: 2px solid #000101;
 }
-.product-groups {
+.product-groups-headline {
     font-size: 24px;
     line-height: 30px;
     margin-top: 29px;
     margin-bottom: 27px;
+}
+.product-groups {
+    
+}
+.product-selection {
+    display: flex;
+    flex-direction: row;
+    gap: 23px;
+}
+.product-choice {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000000;
+}
+.product-choice-name {
+    line-height: 18px;
 }
 /*---------------PRODUCTS-------------------*/
 .product-info {
@@ -244,6 +260,27 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.page-navigation {
+    width: 193px;
+    height: 43px;
+    display: flex;
+    gap: 7px;
+    margin: 45px 0 49px 240px;
+}
+.page-number {
+    display: block;
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: #000000;
+}
+.page-number:nth-child(2) {
+    color: #000000;
+    background: #FFFFFF;
 }
 /*----------------------NEWS & PHOTO------------------*/
 .news-photo {
