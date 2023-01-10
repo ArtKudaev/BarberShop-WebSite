@@ -271,27 +271,69 @@ body {
     display: flex;
     gap: 89px;
     margin-top: 53px;
+    margin-bottom: 49px;
 }
 .detailed-photos {
     display: grid;
     grid-template-areas: "main-pic main-pic main-pic"
                          "second-pic third-pic fourth-pic";
+    
     gap: 20px;
 }
 .main-pic {
+    grid-area: main-pic;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 .second-pic {
+    grid-area: second-pic;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 .third-pic {
+    grid-area: third-pic;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 .fourth-pic {
+    grid-area: fourth-pic;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 .product-description {
+    
+}
+.product-availability-code {
+    display: flex;
+    gap: 176px;
+    margin: 15px 15px 29px 0;
+}
+.availability {
+    display: block;
+}
+.vendor-code {
+    display: block;
+    color: #AEAEAE;
+}
+.about-product {
+    text-transform: uppercase;
+    line-height: 24px;
+    width: 390px;
+    height: 178px;
+}
+.description-price-block {
+    display: flex;
+    margin-bottom: 62px;
+}
+.product-packaging-title {
+    display: block;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+.product-packaging {
 
+}
+.items-of-product-packaging {
+    background: url(images/li-dots.png) no-repeat left 50%;
+    padding-left: 19px;
+    line-height: 24px;
 }
 /*---------------PRODUCTS-------------------*/
 .product-info {
