@@ -74,14 +74,6 @@ body {
 .menu-item:not(:last-child) {
     margin: 0px 40px 0px 0px;
 }
-.chosen-menu-item {
-    position: absolute;
-    width: 56px;
-    height: 4px;
-    left: 643px;
-    top: 68px;
-    background: #FFFFFF;
-}
 .logo-link {
     display: block;
     margin-left: 20px;
@@ -90,6 +82,11 @@ body {
 .menu-link {
     line-height: calc(20 / 16 * 100%);
     color: #FFFFFF;
+}
+.menu-link:hover,
+.menu-link-active {
+    border-bottom: 4px solid #FFFFFF;
+    padding-bottom: 22px;
 }
 .login-block {
     display: block;
@@ -276,6 +273,7 @@ body {
   .product-choice:checked+label::before {
     background-image: url("images/radio-on.svg");
   }
+  
 /*-----------------CHECKED PRODUCT--------------*/
 .checked-product {
     display: flex;
